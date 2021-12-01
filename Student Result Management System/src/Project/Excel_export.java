@@ -52,7 +52,7 @@ public class Excel_export {
 
 		headerCell = headerRow.createCell(2);
 		headerCell.setCellValue("Passwords");
-
+		
 		headerCell = headerRow.createCell(3);
 		headerCell.setCellValue("Subject 1");
 
@@ -73,12 +73,21 @@ public class Excel_export {
 
 		headerCell = headerRow.createCell(9);
 		headerCell.setCellValue("Subject 7");
+		
+		headerCell = headerRow.createCell(10);
+		headerCell.setCellValue("Course Name");
+		
+		headerCell = headerRow.createCell(11);
+		headerCell.setCellValue("Semister");
+		
+		headerCell = headerRow.createCell(12);
+		headerCell.setCellValue("R_ID");
 		int rowCount = 1;
 		while (result.next()) {
 			Row row = sheet.createRow(rowCount++);
 			String id = "";
 			int columnCount = 0;
-			for (int i = 1; i <= 10; i++) {
+			for (int i = 1; i <= 13; i++) {
 					id = result.getString(i);
 					Cell cell = row.createCell(columnCount++);
 					cell.setCellValue(id);

@@ -1,7 +1,7 @@
 <%@page import="Project.*" %>
 <%@page import="java.sql.*" %>
 <% String cource=request.getParameter("course");
-String branch=request.getParameter("branch");
+String branch=request.getParameter("sem");
 String rollNo=request.getParameter("rollNo");
 String name=request.getParameter("name");
 String fatherName=request.getParameter("fatherName");
@@ -16,7 +16,7 @@ if(rs.next()){
 try{
 	st=con.createStatement();
 	st.executeUpdate("insert into student values('"+cource+"','"+branch+"','"+rollNo+"','"+name+"','"+fatherName+"','"+gender+"','"+I_ID+"')");
-	response.sendRedirect("InstituteHome.jsp");
+	response.sendRedirect("InstituteHome.jsp?sucsses=Succesfully inserted.");
 }
 catch(Exception e)
 {

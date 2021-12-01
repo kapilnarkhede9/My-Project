@@ -10,6 +10,7 @@ String s5=request.getParameter("s5");
 String s6=request.getParameter("s6");
 String s7=request.getParameter("s7");
 String I_ID = request.getParameter("I_ID");
+
 Connection con=ConnectionProvider.getCon();
 Statement st=con.createStatement();
 ResultSet rs=st.executeQuery("select * from Temp");
@@ -22,14 +23,14 @@ if(rs.next()){
 	{
 		st=con.createStatement();
 		st.executeUpdate("insert into result values('"+rollNo+"','"+s1+"','"+s2+"','"+s3+"','"+s4+"','"+s5+"','"+s6+"','"+s7+"','"+I_ID+"')");
-		response.sendRedirect("InstituteHome.jsp");
+		response.sendRedirect("InstituteHome.jsp?sucsses=Succesfully inserted.");
 	}
 	catch(Exception e)
 	{
 		out.println(e);
 	}
 }else{
-	response.sendRedirect("InstituteHome.jsp?alert=Invalid Roll Number");
+	response.sendRedirect("InstituteHome.jsp?alert=Invalid Roll Number.");
 }
 
 %>
