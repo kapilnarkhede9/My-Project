@@ -1,9 +1,6 @@
 package Project;
-
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.IOException;
+import java.lang.*;
+import java.io.*;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.*;
 public class Excel_Import {
@@ -20,7 +17,7 @@ public class Excel_Import {
              for(int j=0;j<c;j++) {
             	 data[0][1]="Columns found 	"+j;
             	 	switch(row.getCell(j).getCellType()) {
-            	 	case NUMERIC:  data[i][j] = row.getCell(j).getNumericCellValue()+"";break;
+            	 	case NUMERIC:  data[i][j] = Math.round(row.getCell(j).getNumericCellValue())+"";break;
             	 	
             	 	case STRING :  data[i][j] = row.getCell(j).getStringCellValue();break;
             	 	}

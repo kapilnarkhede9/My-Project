@@ -170,7 +170,8 @@ tbody>tr:nth-child(odd) {
 			Statement st1 = con.createStatement();
 		ResultSet tm = st1.executeQuery(
 				"SELECT institute.*,total_marks.* FROM institute INNER JOIN total_marks ON institute.ID=total_marks.I_ID WHERE institute.ID='"
-				+ id + "'");
+				+ id + "' AND institute.Semister='"
+						+ request.getParameter("sem") + "'	");
 		if (tm.next()) {
 		%>
 		<tbody>

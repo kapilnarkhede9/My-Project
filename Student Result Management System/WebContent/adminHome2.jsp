@@ -135,8 +135,6 @@ if (request.getParameter("alert") != null) {
 													<option value="Sem-IV">Sem-IV</option>
 													<option value="Sem-V">Sem-V</option>
 													<option value="Sem-VI">Sem-VI</option>
-													<option value="Sem-VII">Sem-VII</option>
-													<option value="Sem-VIII">Sem-VIII</option>
 												</select>
 											</div>
 										</div>

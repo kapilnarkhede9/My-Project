@@ -1,0 +1,56 @@
+@charset "ISO-8859-1";
+
+#mo3.init{
+	position:fixed;
+	left:20%;
+	right:20%; 
+	top:10%;
+	bottom:10%;
+	overflow-y:scroll;
+	border:medium;
+	border-radius:40px;
+	height:auto;
+	max-height:1500px;	
+	background-color: #FEEFB3;
+}
+
+.notify_padding{
+	padding-left:10px;
+	padding-bottom:10px;
+	padding-top:10px;
+	padding-right:10px;
+}
+.notify{
+	position:fixed;
+	border:medium;
+	border-radius:40px;
+	left:46%;
+	top:75%;
+	font-weight:bolder;
+	font-size-adjust:inherit;
+	font-style:oblique;	
+	z-index: 4;
+}
+
+.info {
+	color: #00529B;
+	background-color: #BDE5F8;
+	
+}
+
+.success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	
+}
+
+.warning {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	
+}
+
+.error {
+	color: #D8000C;
+	background-color: #FFBABA;
+}

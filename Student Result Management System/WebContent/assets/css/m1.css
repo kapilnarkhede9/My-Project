@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+
+#mo1.student_D {
+	position:fixed;
+	left:20%;
+	right:20%; 
+	top:20%;
+	bottom:10%;
+	border:medium;
+	border-radius:40px;
+	max-width:60%;
+	max-height:80%;
+	z-index:auto;
+	overflow-y:scroll;
+	background-color: #FEEFB3;
+}
+
+
+#mo2.student_R {
+	position:fixed;
+	left:20%;
+	right:20%; 
+	overflow-y:scroll;
+	top:10%;
+	bottom:25%;
+	border:medium;
+	border-radius:40px;
+	max-width:60%;
+	height:90%;
+	max-height:120%;
+	background-color: #FEEFB3;
+}

@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">  
 <style>
 .login-box {
-	height: 400px;
+	height: 450px;
 }
 </style>
 </head>
@@ -20,7 +20,7 @@
 String alert=request.getParameter("alert");
 if(!"none".equalsIgnoreCase(request.getParameter("alert"))){
 	%>
-	<script type="text/javascript">error(2,"<%=request.getParameter("alert")%>");	</script>
+	<script type="text/javascript">error(2,"Invalid Details.");	</script>
 	<%
 }
 Connection con=ConnectionProvider.getCon();
@@ -44,7 +44,7 @@ if(con==null){
 			placeholder="Mothers name" required="required"> <input
 			type="submit" name="submit" value="Search">
 			<h1>
-		<a href="index.html">Back</a>
+		<a href="Course_List.jsp">Back</a>
 	</h1>
 </div> 
 

@@ -3,9 +3,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">   
   <link rel="stylesheet" type="text/css" href="style.css">  
    <link rel="stylesheet" href="assets/css/MyCSS.css" />
-  <style>
+    <style>
+  h3{
+color:red;
+}
   .login-box{
-    height: 380px;
+    height: auto;
 </style>
 </head>
 <%@page import="java.sql.*" %>
@@ -23,6 +26,13 @@ if(con==null){
     <form method="post" action="InstituteLoginAction.jsp">
     <div class="login-box">
     <img src="user.png" class="avatar">
+                 <%
+    if(request.getParameter("warning")!=null){
+    	%>
+    	 <h3><center>Incorrect Username or Password</center></h3>
+    	<%
+    } %>
+   
         <h1>Institute Login</h1>
             <p>User ID</p>
             <input type="text" name="username" placeholder="Enter Username" required="required">

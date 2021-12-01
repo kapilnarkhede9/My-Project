@@ -22,9 +22,12 @@
 			response.sendRedirect("InstituteHome.jsp?I_ID=" + rs.getString("ID"));
 			break;
 		}
+		else {
+			response.sendRedirect("InstituteLogin.jsp?warning=Incorrect Username or Password");
+				}
 	}
 		} else {
-	response.sendRedirect("errorAdminLogin.html");
+	response.sendRedirect("InstituteLogin.jsp?warning=Incorrect User ID or Password");
 		}
 	}
 } catch (Exception e) {
