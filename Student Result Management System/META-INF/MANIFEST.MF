@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Student_Result_Management_System
+Bundle-SymbolicName: Student_Result_Management_System
+Bundle-Version: 1.0.0.qualifier
+Export-Package: Project
